@@ -1,0 +1,126 @@
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  font-family: sans-serif;
+  padding: 2rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: black;
+}
+
+.font-small {
+  font-size: 10px;
+}
+.font-medium {
+  font-size: 14px;
+}
+.font-large {
+  font-size: 21px;
+}
+
+.controls {
+  margin-top: 1rem;
+}
+
+select,
+button {
+  margin: 0.5rem;
+  padding: 0.4rem;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+
+button:hover {
+  animation: bounce 0.4s;
+  background-color: rgb(113, 113, 238);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animated-text {
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.scale-up {
+  animation: scaleUp 0.4s ease;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* 🔄 Rotating Box */
+#rotatingBox {
+  width: 100px;
+  height: 100px;
+  margin-top: 2rem;
+  border-radius: 12px;
+  animation: spin 6s linear infinite;
+  transition: background-color 0.6s ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#rotatingBox {
+  width: 220px;
+  height: 220px;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  border-radius: 12px;
+  animation: spin 10s linear infinite;
+  transition: background-color 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.boxText {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  font-size: 1.5rem;
+  pointer-events: none;
+  user-select: none;
+}
+header p {
+  font-size: 1.4rem;
+  text-decoration: underline;
+}

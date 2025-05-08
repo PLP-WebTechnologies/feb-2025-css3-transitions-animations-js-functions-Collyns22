@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-TRANSITION & ANIMATION</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS-TRANSITION & ANIMATION</h1>
+      <p>
+        Observe the beauty of css animation and transition as the box rotates!
+      </p>
+    </header>
+    <!--a box to showcase a simple transition  -->
+    <div id="rotatingBox">
+      <span class="boxText">Welcome to my site</span>
+    </div>
+    <div>
+      <p>
+        Now, do you know you can change the theme of this site? yes! Just toggle
+        the button below. Also observe the smooth fade-in transition of the site
+        when the font size and the language is changed.
+      </p>
+    </div>
+
+    <h1 id="greeting" class="animated-text">Hello!</h1>
+
+    <div class="controls">
+      <button id="toggleThemeBtn">Toggle Theme</button>
+
+      <label for="fontSize">Font Size:</label>
+      <select id="fontSize">
+        <option value="font-small">Small</option>
+        <option value="font-medium">Medium</option>
+        <option value="font-large">Large</option>
+      </select>
+
+      <label for="languageSelect">Language:</label>
+      <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="fr">French</option>
+      </select>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
